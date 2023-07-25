@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="text">저는 텍스트의 텍스트 노드이며 li의 부모요
+        <li>나는 자식1</li>
+        <li>나는 자식2</li>
+    </ul>
+</body>
+<script>
+    const cha = document.getElementById('text');
+    const newA = document.createElement("li");
+    newA.textContent = "바뀐것인가";
+    cha.replaceChild(newA, cha.childNodes[1] );
+</script>
+</html>

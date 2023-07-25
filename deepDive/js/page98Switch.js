@@ -1,0 +1,30 @@
+let month = 11;
+let result;
+switch(month) {
+    case 1 : result = '1월';
+    break;
+    case 2 : result = '2월';
+    break;
+    case 3 : result = '3월';
+    break;
+    case 4 : result = '4월';
+    break; 
+    case 5 : result = '5월';
+    break;
+    case 6 : result = '6월';
+    break;
+    case 7 : result = '7월';
+    break;
+    case 8 : result = '8월';
+    break;
+    case 9 : result = '9월';
+    break;
+    case 10 : result = '10월';
+    break;
+    case 11 : result = '11월';
+    break;
+    case 12 : result = '12월';
+    break;
+    default : result ='없는 달 입니다.';
+}
+console.log(result);

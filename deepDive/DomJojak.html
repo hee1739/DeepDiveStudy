@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="text">
+        안녕하세요 돔 조작을 시작하자 <!--이때 여기의 텍스트노드는 요소 노드의 자식노드 이다.-->
+        <div id="test"> 나는 텍스트의 2번째 자식노드</div>
+        <div id="test2">나는 3번째/div>
+    </div>
+<script>
+    const textNode = document.getElementById('text').firstChild;
+    textNode.nodeValue = 'text의 자식노드가 바꼈다.';
+    
+    const testChange = document.getElementById('test').childNodes[0]; //childNodes는 인덱스 번호 먹여줘야됨
+    testChange.nodeValue = 'test의 자식 노드 변경';
+    
+    document.getElementById('test2').innerHTML = 'test2를 바꿔줘';
+   
+    text.innerHTML += `<li class="banana">추가한 노드</li>`; // 인덱스 2번째 번호로 text의 자식노드가 됨 
+    //text.innerHTML = `<div class="apple">하이맨</div>`;
+    console.log(text.childNodes);
+
+    const di = document.createElement('div');
+    const atest = document.createTextNode('innerHTML대신 appendChild를 쓰자');
+    di.appendChild(atest);
+    text.appendChild(di);
+</script>
+</body>
+</html>

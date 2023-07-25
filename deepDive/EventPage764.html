@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="test">
+    <button>click</button>
+    <em>ㅇㅇ</em>
+    </div>
+</body>
+<script>
+    const btn = document.querySelector('button');
+
+    btn.addEventListener('click', function(){ //여기서 click은 지정된 타입 이벤트임 p.755에 있음
+        //const bch = document.getElementById('test');
+        
+        const di = document.createElement('div');
+        const atest = document.createTextNode('클릭시 만들어짐');
+        di.appendChild(atest);
+        test.appendChild(di);
+        alert("만들어 졌습니다!");
+        //console.log("실행");
+    })
+</script>
+</html>
